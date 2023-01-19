@@ -22,10 +22,13 @@ app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 
+// --- routing --- 
 // dirname is a global variable looking inside the current folder
 // This is useful for static files f.e. css files or 404 pages
 app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/", require("./routes/root"));
+
+app.use("/users", require("./routes/userRoutes"))
 
 // Catch all route in case of errors
 app.all("*", (req, res) => {
