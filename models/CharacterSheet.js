@@ -30,4 +30,4 @@ const characterSheetSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Charactersheet", characterSheetSchema);
+module.exports = mongoose.model("Sheet", characterSheetSchema);

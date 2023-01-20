@@ -29,6 +29,7 @@ app.use("/", express.static(path.join(__dirname, "public")));
 app.use("/", require("./routes/root"));
 
 app.use("/users", require("./routes/userRoutes"))
+app.use("/sheets", require("./routes/sheetRoutes"))
 
 // Catch all route in case of errors
 app.all("*", (req, res) => {
