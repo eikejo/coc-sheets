@@ -8,4 +8,8 @@ router.route("/")
 .patch(sheetController.updateSheet)
 .delete(sheetController.deleteSheet);
 
+router.route("/:userId")
+.get(sheetController.getAllSheetsForUser)
+
+
 module.exports = router;
