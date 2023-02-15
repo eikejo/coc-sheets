@@ -5,7 +5,7 @@ const DashHeader = () => {
     <header className="dash-header">
       <div className="dash-header__container">
         <Link to="/dash/sheets">
-          <h1 className="dash-header__title">Character Sheets</h1>
+          <h1 className="dash-header__title">Call of Cthulhu Tool</h1>
         </Link>
         <nav className="dash-header__nav">{/* Will be done later*/}</nav>
       </div>
